@@ -1,0 +1,127 @@
+header {
+	background-color: #f1f0ee;
+	padding: 17px 0;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	align-items: center;
+	justify-content: space-between;
+	list-style: none;
+}
+
+.header__link {
+	font-weight: 500;
+	line-height: 22px;
+	text-decoration: none;
+	color: #000;
+	/* font-size: 18px; */
+}
+
+.header__item {
+	margin-right: 35px;
+}
+
+@media only screen and (max-width: 992px) {
+	.header__item {
+		display: none;
+	}
+}
+
+.header__btn {
+	min-width: 140px;
+	text-align: center;
+	padding: 9px 12px;
+	border-radius: 100px;
+	background-color: #fff;
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+
+.blog-article__date,
+.blog-article__view-count {
+	display: flex;
+	align-items: center;
+}
+.blog-article__date {
+	justify-content: space-between;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: -0.02em;
+	color: rgba(0, 0, 0, 0.35);
+	/* margin-top: 20px; */
+	margin-bottom: 14px;
+}
+
+.blog-article__view-count {
+	display: flex;
+	align-items: center;
+}
+
+.blog-article__view-count:before {
+	content: '';
+	width: 16px;
+	height: 16px;
+	display: block;
+	background-image: url('https://najottalim.uz/_next/static/media/icon-eye.7599250f.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-right: 6px;
+}
+
+.card {
+	cursor: pointer;
+	transition: all 0.4s ease;
+	min-height: 222px !important;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px !important;
+}
+
+.card:hover {
+	box-shadow: 0 2px 16px 3px rgba(0, 0, 0, 0.1) !important;
+	border-radius: 12px;
+}
+
+.card-title {
+	overflow: hidden !important;
+	display: -webkit-box !important;
+	-webkit-box-orient: vertical !important;
+	padding-top: 10px;
+	font-weight: 700;
+	font-size: 18px;
+	-webkit-line-clamp: 2;
+	margin: 0 0 14px;
+	color: #000;
+}
+
+.card-text {
+	overflow: hidden !important;
+	display: -webkit-box !important;
+	-webkit-box-orient: vertical !important;
+	max-width: 336px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 22px;
+	-webkit-line-clamp: 3;
+	color: rgba(0, 0, 0, 0.5);
+	margin: 0;
+}
+
+.login__form {
+	width: 100%;
+	max-width: 450px;
+	margin-top: 40px;
+	background-color: #fff;
+}
